@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Λi Work - AI & Cloud Solutions</title>
+
+    <meta name="description" content="Ai Work provides full-stack AI and multi-cloud solutions on AWS, Azure, and GCP, from intelligent platforms to scalable infrastructure.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://www.your-domain.com/">
+
+
+    <link rel="icon" href="logo.png" type="image/png">
+    <meta name="theme-color" content="#10b981">
+
+
+    <meta property="og:title" content="Λi Work - AI & Cloud Solutions">
+
+    <meta property="og:description" content="Powering the future with full-stack AI and multi-cloud infrastructure.">
+    
+    <meta property="og:type" content="website">
+
+    <meta property="og:url" content="https://www.your-domain.com/">
+
+    <meta property="og:image" content="https://www.your-domain.com/logo.png">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Λi Work - AI & Cloud Solutions">
+
+    <meta name="twitter:description" content="Powering the future with full-stack AI and multi-cloud infrastructure.">
+
+    <meta name="twitter:image" content="https://www.your-domain.com/logo.png">
+    
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #10b981, #059669);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px 0 rgba(16, 185, 129, 0.4);
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 30px 5px rgba(16, 185, 129, 0.6);
+            transform: translateY(-2px);
+        }
+        .glow-card {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 20px -5px rgba(0,0,0,0.08);
+        }
+        .glow-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 0 35px 5px rgba(16, 185, 129, 0.5);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .header-scrolled {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border-color: transparent;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .marquee-content {
+            animation: scroll 60s linear infinite;
+        }
+        .marquee-content.paused {
+            animation-play-state: paused;
+        }
+        .marquee-content img {
+            transition: transform 0.3s ease;
+        }
+        .marquee-content img:hover {
+            transform: scale(1.15);
+        }
+        
+        /* Fix for sticky header covering content on scroll */
+        #home, #solutions, #tech, #contact {
+            scroll-margin-top: 6rem; /* Adjust this value if needed */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header id="main-header" class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-gray-200/50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="flex-shrink-0 -my-4 flex items-center gap-3">
+                 <img src="logo.png" alt="Ai Work Logo" class="h-20 w-auto">
+                 <span class="font-bold text-2xl text-gray-800">Λi Work</span>
+            </a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-emerald-600 transition-colors font-medium">Home</a>
+                <a href="#solutions" class="text-gray-600 hover:text-emerald-600 transition-colors font-medium">Solutions</a>
+                <a href="#tech" class="text-gray-600 hover:text-emerald-600 transition-colors font-medium">Technology</a>
+                <a href="#contact" class="text-gray-600 hover:text-emerald-600 transition-colors font-medium">Contact</a>
+            </div>
+            <div class="hidden lg:flex items-center gap-6">
+                <a href="tel:+19156005888" class="flex items-center text-emerald-600 font-semibold transition-colors hover:text-emerald-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>
+                    <span>+1 (915) 600-5888</span>
+                </a>
+                <a href="#contact" class="bg-emerald-600 text-white px-5 py-2 rounded-lg font-semibold shadow-md hover:bg-emerald-700 transition-all duration-300 transform hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+            <button id="mobile-menu-button" class="lg:hidden text-gray-700 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16" />
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4">
+            <a href="#home" class="block py-2 text-gray-600 hover:text-emerald-600">Home</a>
+            <a href="#solutions" class="block py-2 text-gray-600 hover:text-emerald-600">Solutions</a>
+            <a href="#tech" class="block py-2 text-gray-600 hover:text-emerald-600">Technology</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-emerald-600">Contact</a>
+            <a href="tel:+19156005888" class="block py-2 text-gray-600 hover:text-emerald-600">+1 (915) 600-5888</a>
+            <a href="#contact" class="block w-full mt-2 bg-emerald-600 text-white text-center px-5 py-2 rounded-lg font-semibold shadow-md">Get Started</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="relative pt-20 md:pt-28 pb-16 md:pb-24 bg-white overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-emerald-50/50 via-white to-green-50/50"></div>
+            <div class="container mx-auto px-6 text-center relative">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight">
+                    Powering the Future with <span class="gradient-text">AI & Cloud</span>
+                </h1>
+                <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-600 reveal">
+                    We provide full-stack software solutions, from intelligent AI platforms to scalable multi-cloud infrastructure on AWS, Azure, and GCP.
+                </p>
+                <div class="reveal mt-10">
+                    <a href="#solutions" class="inline-block bg-emerald-600 text-white px-8 py-4 rounded-full font-bold text-lg glow-button">
+                        Explore Our Solutions
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="solutions" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Main Services</h2>
+                    <p class="mt-4 text-lg text-gray-600">End-to-end solutions to build, scale, and innovate.</p>
+                </div>
+                <div class="reveal">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                         <div class="glow-card bg-white rounded-2xl border border-gray-100">
+                             <div class="p-8 text-center">
+                                <div class="flex justify-center mb-4">
+                                     <svg class="h-12 w-12 text-emerald-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.898 20.553L16.5 21.75l-.398-1.197a3.375 3.375 0 00-2.455-2.455L12.75 18l1.197-.398a3.375 3.375 0 002.455-2.455l.398-1.197.398 1.197a3.375 3.375 0 002.455 2.455l1.197.398-1.197.398a3.375 3.375 0 00-2.455 2.455z" /></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">AI Solutions</h3>
+                                <p class="text-gray-600">Leverage our powerful AI models and platforms to unlock new capabilities and drive intelligent automation.</p>
+                             </div>
+                        </div>
+                        <div class="glow-card bg-white rounded-2xl border border-gray-100">
+                             <div class="p-8 text-center">
+                                <div class="flex justify-center mb-4">
+                                    <svg class="h-12 w-12 text-emerald-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" /></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Cloud & Infrastructure</h3>
+                                <p class="text-gray-600">Reliable IaaS with high-performance compute, storage, and networking on demand across major cloud platforms.</p>
+                             </div>
+                        </div>
+                        <div class="glow-card bg-white rounded-2xl border border-gray-100">
+                            <div class="p-8 text-center">
+                                <div class="flex justify-center mb-4">
+                                    <svg class="h-12 w-12 text-emerald-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Web & App Development</h3>
+                                <p class="text-gray-600">Custom software solutions, from stunning web frontends to powerful mobile applications, built for performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="tech" class="py-16 md:py-24 overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Technology Stack</h2>
+                    <p class="mt-4 text-lg text-gray-600">We build on the industry's most trusted and powerful platforms.</p>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="relative py-8 bg-white/70 backdrop-blur-sm shadow-inner">
+                    <div class="w-full overflow-hidden">
+                        <div id="tech-marquee" class="marquee-content flex w-max space-x-16">
+                            <div class="flex items-center justify-center flex-nowrap space-x-16">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" class="h-10 md:h-12" title="AWS">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg" alt="Azure Logo" class="h-9 md:h-11" title="Microsoft Azure">
+                                <img src="https://cdn.simpleicons.org/googlecloud" alt="Google Cloud Platform Logo" class="h-10 md:h-12" title="Google Cloud">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" alt="Docker Logo" class="h-12 md:h-14" title="Docker">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes Logo" class="h-10 md:h-12" title="Kubernetes">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" class="h-10 md:h-12" title="Python">
+                                <img src="https://cdn.simpleicons.org/ansible/EE0000" alt="Ansible Logo" class="h-10 md:h-12" title="Ansible">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg" alt="Maven Logo" class="h-10 md:h-12" title="Apache Maven">
+                            </div>
+                            <div class="flex items-center justify-center flex-nowrap space-x-16" aria-hidden="true">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" class="h-10 md:h-12" title="AWS">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg" alt="Azure Logo" class="h-9 md:h-11" title="Microsoft Azure">
+                                <img src="https://cdn.simpleicons.org/googlecloud" alt="Google Cloud Platform Logo" class="h-10 md:h-12" title="Google Cloud">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" alt="Docker Logo" class="h-12 md:h-14" title="Docker">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes Logo" class="h-10 md:h-12" title="Kubernetes">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" class="h-10 md:h-12" title="Python">
+                                <img src="https://cdn.simpleicons.org/ansible/EE0000" alt="Ansible Logo" class="h-10 md:h-12" title="Ansible">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Apache_Maven_logo.svg" alt="Maven Logo" class="h-10 md:h-12" title="Apache Maven">
+                            </div>
+                        </div>
+                    </div>
+                    <button id="pause-button" title="Play/Pause Animation" class="absolute top-1/2 right-6 -translate-y-1/2 z-10 bg-white rounded-full p-2 shadow-lg border hover:bg-gray-100 transition-transform hover:scale-110">
+                        <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm4 0a1 1 0 012 0v4a1 1 0 11-2 0V8z" clip-rule="evenodd" />
+                        </svg>
+                        <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700 hidden" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 md:py-24">
+            <div class="container mx-auto px-6 text-center">
+                <div class="reveal">
+                    <div class="bg-white rounded-2xl shadow-lg p-10 md:p-16 glow-card">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Ready to Transform Your Business?</h2>
+                        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Join thousands of innovative companies building the future on Ai Work. Let's get started today.</p>
+                        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                            <a href="tel:+19156005888" class="w-full sm:w-auto inline-block bg-emerald-600 text-white px-8 py-3 rounded-lg font-bold text-lg transition-transform hover:scale-105 shadow-lg hover:shadow-emerald-400/50">
+                                Call Us
+                            </a>
+                            <a href="mailto:contact@aiwork.in" class="w-full sm:w-auto inline-block bg-white text-emerald-600 px-8 py-3 rounded-lg font-bold text-lg transition-transform hover:scale-105 shadow-lg hover:shadow-gray-400/50">
+                                Email Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="col-span-1 md:col-span-2 lg:col-span-2">
+                    <div class="flex items-center gap-3">
+                        <img src="logo.png" alt="Ai Work Logo" class="h-12">
+                        <span class="text-white font-semibold text-xl tracking-wide">Λi Work</span>
+                    </div>
+                    <p class="mt-4 max-w-xs">Powering the future of business with intelligent cloud and AI solutions.</p>
+                </div>
+                <div>
+                    <h5 class="font-semibold text-white tracking-wide">Links</h5>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#solutions" class="hover:text-white">Solutions</a></li>
+                        <li><a href="#tech" class="hover:text-white">Technology</a></li>
+                         <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-1 md:col-span-2 lg:col-span-2">
+                    <h5 class="font-semibold text-white tracking-wide">Contact Us</h5>
+                    <ul class="mt-4 space-y-3">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 mt-1 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
+                            <span>No. 108, Ten Square Mall, Jawaharlal Nehru Salai, Koyambedu, Chennai, Tamil Nadu 600107</span>
+                        </li>
+                         <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
+                            <a href="mailto:contact@ai-work.in" class="hover:text-white">contact@ai-work.in</a>
+                        </li>
+                        <li class="flex items-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>
+                            <a href="tel:+19156005888" class="hover:text-white">+1 (915) 600-5888</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2025 Ai Work, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                window.scrollTo(0, 0);
+            }, 0);
+        };
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        // Select all links within the mobile menu
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+
+        // Toggles the menu when the hamburger button is clicked
+        mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        // Add a click listener to each link in the mobile menu
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // When a link is clicked, hide the mobile menu
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        revealElements.forEach(element => revealObserver.observe(element));
+
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+
+        const marquee = document.getElementById('tech-marquee');
+        const pauseButton = document.getElementById('pause-button');
+        const playIcon = document.getElementById('play-icon');
+        const pauseIcon = document.getElementById('pause-icon');
+
+        if (marquee && pauseButton && playIcon && pauseIcon) {
+            pauseButton.addEventListener('click', () => {
+                const isPaused = marquee.classList.toggle('paused');
+                playIcon.classList.toggle('hidden', !isPaused);
+                pauseIcon.classList.toggle('hidden', isPaused);
+            });
+        }
+    </script>
+</body>
+</html>
